@@ -1,0 +1,156 @@
+* {
+    font-family: 'Roboto Mono.ttf', sans-serif;
+    user-select: none;
+}
+body {
+    background-color: rgb(34, 33, 33);
+}
+#go {
+    padding: 0.2vw;
+    width: 5%;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#countdown {
+    font-size: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#settings {
+    height: 80vh;
+    width: 99vw;
+}
+.bigt {
+    color: rgb(68, 68, 228);
+    text-align: center;
+    font-size: 3vw;
+}
+.t {
+    text-align: center;
+    color: rgb(68, 68, 228);
+    display: inline-block;
+    font-size: 1vw;
+}
+.section {
+    height: 25%;
+    width: 100%;
+    display: block;
+}
+#settings-t {
+    font-size: 4vw;
+    width: 100%;
+    height: 10%;
+}
+.item {
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+    user-select: none;
+    padding-right: 1vw;
+    display: inline;
+}
+.size {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: lime;
+}
+#medium {
+    width: 3vw;
+    height: 3vw;
+}
+#big {
+    width: 4vw;
+    height: 4vw;
+}
+#small {
+    width: 2vw;
+    height: 2vw;
+}
+.color {
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+.length {
+    width: 10%;
+}
+.items {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.target {
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#game {
+    width: 90vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#timed {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+}
+#result {
+    width: 60%;
+    height: 80%;
+
+    border-radius: 0.8vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(63, 58, 58);
+}
+.category {
+    font-size: 3vw;
+    display: block;
+    color: rgb(204, 31, 31);
+}
+@media (max-width: 1500px) {
+    .t {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 900px) {
+    .bigt {
+        font-size: 6vw;
+    }
+    #settings-t {
+        font-size: 8vw;
+    }
+    #result {
+        border-radius: 1.5vw;
+        width: 90%;
+        height: 90%;
+    }
+    .color {
+        width: 5vw;
+        height: 5vw;
+    }
+    .t {
+        font-size: 3vw;
+    }
+    #go {
+        width: 10%;
+    }
+    .category {
+        font-size: 5vw;
+    }
+}

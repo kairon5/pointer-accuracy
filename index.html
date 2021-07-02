@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pointer Accuracy</title>
+        <link rel="icon" href="pointer.jpeg" />
+        <link rel="stylesheet" href="styling.css" />
+    </head>
+    <body>
+        <script src="functions.js"></script>
+        <div id="settings">
+            <div id="settings-t" class="bigt">SETTINGS</div>
+            <div id="color" class="section">
+                <div id="color-t" class="bigt">COLOR</div>
+                <div class="items">
+                    <div
+                        class="color"
+                        id="red"
+                        style="background-color: red"
+                    ></div>
+                    <div
+                        class="color"
+                        id="lime"
+                        style="background-color: lime; border: 3px solid white"
+                        clicked="true"
+                    ></div>
+                    <div
+                        class="color"
+                        id="blue"
+                        style="background-color: blue"
+                    ></div>
+                    <div
+                        class="color"
+                        id="pink"
+                        style="background-color: pink"
+                    ></div>
+                    <div
+                        class="color"
+                        id="orange"
+                        style="background-color: orange"
+                    ></div>
+                    <div
+                        class="color"
+                        id="yellow"
+                        style="background-color: yellow"
+                    ></div>
+                </div>
+            </div>
+            <div id="size" class="section">
+                <div id="size-t" class="bigt">SIZE</div>
+                <div class="items">
+                    <div class="size" id="small"></div>
+                    <div
+                        class="size"
+                        id="medium"
+                        style="border: 3px solid white"
+                        clicked="true"
+                    ></div>
+                    <div class="size" id="big"></div>
+                </div>
+            </div>
+            <div id="time" class="section">
+                <div id="time-t" class="bigt">TIME</div>
+                <div class="items">
+                    <div class="t">5 seconds</div>
+                    <input
+                        id="time-slider"
+                        type="range"
+                        max="150"
+                        min="5"
+                        value="40"
+                        class="t"
+                    />
+                    <div class="t">150 seconds</div>
+                </div>
+            </div>
+            <div id="difficulty" class="section">
+                <div id="difficulty-t" class="bigt">DIFFICULTY</div>
+                <div class = "items">
+                    <input type="range" min="1" max="5" value="3" id="dif-slider">
+                </div>
+            </div>
+            <img
+                src="forward.jpeg"
+                id="go"
+                onmouseover="this.style.border = '0.2vw solid red';"
+                onmouseout="this.style.border = '';"
+                onclick="startGame();"
+            ></img>
+        </div>
+        <script src="game.js"></script>
+        <script src="settings.js"></script>
+    </body>
+</html>
